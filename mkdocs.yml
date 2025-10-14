@@ -6,13 +6,26 @@ site_url: https://yourproject.readthedocs.io
 docs_dir: docs
 site_dir: site
 
+# theme:
+#   name: readthedocs
+#   highlightjs: true
+#   hljs_languages:
+#     - python
+#     - cpp
+#     - yaml
+
+# Theme
 theme:
-  name: readthedocs
-  highlightjs: true
-  hljs_languages:
-    - python
-    - cpp
-    - yaml
+  name: material
+  language: zh
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - content.code.annotate
+    - content.code.copy
 
 nav:
   - 首页: index.md
@@ -20,16 +33,22 @@ nav:
   - API:
       - 使用示例: api/usage.md
 
+
+# Extensions - 添加 Mermaid 支持
 markdown_extensions:
-  - toc:
-      permalink: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
   - admonition
-  - codehilite:
-      guess_lang: false
-  - tables
-  - footnotes
-  - def_list
+  - pymdownx.details
   - attr_list
+  - md_in_html
+
 
 plugins:
   - search
