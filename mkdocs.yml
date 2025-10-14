@@ -29,7 +29,7 @@ theme:
 
 nav:
   - 首页: index.md
-  - 使用指南: guide.md
+  - 使用指南1: guide.md
   - API:
       - 使用示例: api/usage.md
 
