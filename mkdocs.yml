@@ -18,10 +18,10 @@ theme:
       primary: white
       accent: white
 
-  # 字体配置
-  font:
-    text: Consolas
-    code: Consolas
+  # # 字体配置
+  # font:
+  #   text: Consolas
+  #   code: Consolas
 
   # 图标
   icon:
@@ -51,9 +51,10 @@ theme:
     # 其他
     - header.autohide           # 自动隐藏标题
 
+
 # 添加自定义 CSS 和 JavaScript
-# extra_css:
-#   - stylesheets/extra.css
+extra_css:
+  - stylesheets/extra.css
 
 # Markdown 扩展
 markdown_extensions:
