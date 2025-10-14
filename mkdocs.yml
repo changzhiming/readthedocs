@@ -50,6 +50,10 @@ theme:
     # 其他
     - header.autohide           # 自动隐藏标题
 
+# 添加自定义 CSS
+extra_css:
+  - stylesheets/extra.css
+
 # Markdown 扩展
 markdown_extensions:
   # Python Markdown 官方扩展
@@ -147,6 +151,3 @@ plugins:
       locale: zh
       fallback_to_build_date: true
 
-# 添加自定义 CSS
-extra_css:
-  - stylesheets/extra.css
