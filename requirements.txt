@@ -1,3 +1,2 @@
 mkdocs
-mkdocs-theme-readthedocs
 mkdocs-git-revision-date-localized-plugin
