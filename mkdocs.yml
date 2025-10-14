@@ -13,33 +13,15 @@ theme:
   name: material
   language: zh
 
-  # 调色板配置
   palette:
-    # 浅色模式
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/brightness-7
-        name: 切换到深色模式
-    # 深色模式
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/brightness-4
-        name: 切换到浅色模式
-  # palette:
-  #   - scheme: default
-  #     primary: white
-  #     accent: white
+    - scheme: default
+      primary: white
+      accent: dark
 
   # # 字体配置
-  # font:
-  #   text: Consolas
-  #   code: Consolas
+  font:
+    text: Roboto
+    code: Roboto Mono
 
   # 图标
   icon:
@@ -52,8 +34,12 @@ theme:
     - navigation.sections       # 导航部分
     - navigation.expand         # 展开导航
     - navigation.indexes        # 导航索引
+    # - navigation.tabs  #导航选项卡
     - navigation.top            # 返回顶部按钮
     - navigation.tracking       # 导航跟踪
+    - navigation.prune          # 修剪导航
+    - navigation.path           # 导航路径
+    - navigation.footer         # 导航页脚
 
     # 搜索
     - search.highlight          # 搜索高亮
@@ -126,54 +112,31 @@ markdown_extensions:
 
 # 导航结构
 nav:
-  - c++:
-    - 安装: getting-started/installation.md
-    - 配置: getting-started/configuration.md
-    - 第一个项目: getting-started/first-project.md
-    - 代码: guide.md
-    - 容器: c++/containers.md
-    - 安装: getting-started/installation.md
-    - 配置: getting-started/configuration.md
-    - 第一个项目: getting-started/first-project.md
-    - 代码: guide.md
-    - 容器: c++/containers.md
-    - 安装: getting-started/installation.md
-    - 配置: getting-started/configuration.md
-    - 第一个项目: getting-started/first-project.md
-    - 代码: guide.md
-    - 容器: c++/containers.md
-    - 安装: getting-started/installation.md
-    - 配置: getting-started/configuration.md
-    - 第一个项目: getting-started/first-project.md
-    - 代码: guide.md
-    - 容器: c++/containers.md
-    - 安装: getting-started/installation.md
-    - 配置: getting-started/configuration.md
-    - 第一个项目: getting-started/first-project.md
-    - 代码: guide.md
-    - 容器: c++/containers.md
-    - 安装: getting-started/installation.md
-    - 配置: getting-started/configuration.md
-    - 第一个项目: getting-started/first-project.md
-    - 代码: guide.md
-    - 容器: c++/containers.md
-    - 安装: getting-started/installation.md
-    - 配置: getting-started/configuration.md
-    - 第一个项目: getting-started/first-project.md
-    - 代码: guide.md
-    - 容器: c++/containers.md
-    - 安装: getting-started/installation.md
-    - 配置: getting-started/configuration.md
-    - 第一个项目: getting-started/first-project.md
-    - 代码: guide.md
-    - 容器: c++/containers.md
-    - 安装: getting-started/installation.md
-    - 配置: getting-started/configuration.md
-    - 第一个项目: getting-started/first-project.md
-    - 代码: guide.md
-    - 容器: c++/containers.md
-  - linux:
-    - apt: linux/apt-dpkg.md
+  - 首页: index.md
+  - C++ 编程:
+    - 快速开始:
+      - 安装环境: getting-started/installation.md
+      - 基础配置: getting-started/configuration.md
+      - 第一个项目: getting-started/first-project.md
+    - 基础语法:
+      - 语法入门: guide.md
+      - 数据类型: c++/data-types.md
+      - 控制结构: c++/control-structures.md
+    - 标准库:
+      - 容器类: c++/containers.md
+      - 算法: c++/algorithms.md
+      - 智能指针: c++/smart-pointers.md
+    - 高级特性:
+      - 模板编程: c++/templates.md
+      - 并发编程: c++/concurrency.md
+      - 现代C++: c++/modern-cpp.md
+  - Linux 系统:
+    - 包管理:
+      - APT工具: linux/apt-dpkg.md
+      - 软件安装: linux/software-install.md
+    - 系统管理:
+      - 进程管理: linux/process-management.md
+      - 网络配置: linux/network-config.md
 
 
 
