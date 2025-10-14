@@ -1,6 +1,5 @@
 # 网站基本信息
-site_name: 我的文档项目
-site_description: 一个基于 MkDocs 和 Material 主题的文档网站
+site_name: C++ 文档
 site_author: changzhiming
 site_url: https://changzhiming.readthedocs.io/
 
@@ -26,7 +25,7 @@ theme:
 
   # 图标
   icon:
-    logo: material/library
+    logo: material/code-braces
     repo: fontawesome/brands/github
 
   # 功能特性
