@@ -1,0 +1,41 @@
+site_name: MkDocs RTD Template
+site_description: 示例文档项目，用于 Read the Docs 自动构建
+site_author: changzhiming
+site_url: https://yourproject.readthedocs.io
+
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: readthedocs
+  highlightjs: true
+  hljs_languages:
+    - python
+    - cpp
+    - yaml
+
+nav:
+  - 首页: index.md
+  - 使用指南: guide.md
+  - API:
+      - 使用示例: api/usage.md
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - tables
+  - footnotes
+  - def_list
+  - attr_list
+
+plugins:
+  - search
+  - mkdocs_git_revision_date_localized:
+      fallback_to_build_date: true
+
+repo_url: https://github.com/yourname/mkdocs-rtd-template
+repo_name: GitHub
+edit_uri: edit/main/docs/
