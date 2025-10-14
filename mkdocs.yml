@@ -51,24 +51,6 @@ theme:
     # 其他
     - header.autohide           # 自动隐藏标题
 
-# 额外配置
-extra:
-  version:
-    provider: mike
-  social:
-    - icon: fontawesome/solid/book
-      link: https://changzhiming.readthedocs.io/
-  analytics:
-    provider: google
-    property: !ENV GOOGLE_ANALYTICS_KEY
-  consent:
-    title: Cookie consent
-    description: >-
-      We use cookies to recognize your repeated visits and preferences, as well
-      as to measure the effectiveness of our documentation and whether users
-      find what they're searching for. With your consent, you're helping us to
-      make our documentation better.
-
 # 添加自定义 CSS 和 JavaScript
 # extra_css:
 #   - stylesheets/extra.css
