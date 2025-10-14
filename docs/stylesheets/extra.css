@@ -1,48 +1,88 @@
-/* 完全隐藏右侧边栏和TOC */
-.md-sidebar--secondary,
-.md-nav--secondary,
-.md-nav__link--passed,
-.md-nav__link--active {
-  display: none !important;
+/* 隐藏右侧目录导航 */
+.md-sidebar--secondary {
+    display: none;
 }
 
-/* 强制内容区域占据全部可用空间 */
-@media screen and (min-width: 76.25em) {
-  .md-main__inner {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .md-content {
-    margin-left: 12.1rem !important;
-    margin-right: 0 !important;
-    max-width: none !important;
-    width: calc(100vw - 12.1rem) !important;
-  }
+/* 扩展主内容区域宽度 */
+.md-main__inner {
+    max-width: none;
 }
 
-/* 移动端全宽 */
-@media screen and (max-width: 76.24em) {
-  .md-content {
-    margin: 0 !important;
-    width: 100vw !important;
-    max-width: none !important;
-  }
+.md-content {
+    max-width: none;
 }
 
-/* 确保内容容器充满 */
-.md-content__inner {
-  max-width: none !important;
-  margin: 0 !important;
-  padding: 1rem;
+/* 调整左侧边栏后的内容布局 */
+.md-grid {
+    max-width: none;
 }
 
-/* 表格和代码充满宽度 */
-.md-typeset table {
-  width: 100%;
+/* 可选：设置合适的最大宽度以保持可读性 */
+.md-typeset {
+    max-width: 100%; /* 或者使用 100% */
+}
+/* 隐藏整个底部区域 */
+.md-footer {
+    display: none !important;
 }
 
-.md-typeset pre {
-  width: 100%;
-  max-width: none;
+/* 右下角版本选择器 */
+.version-selector {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background: var(--md-primary-fg-color);
+    color: white;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 14px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
+
+.version-selector:hover {
+    background: var(--md-accent-fg-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.version-dropdown {
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    margin-bottom: 5px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    display: none;
+    min-width: 150px;
+}
+
+.version-dropdown.show {
+    display: block;
+}
+
+.version-option {
+    padding: 8px 12px;
+    cursor: pointer;
+    color: #333;
+    border-bottom: 1px solid #eee;
+    transition: background 0.2s ease;
+}
+
+.version-option:hover {
+    background: #f5f5f5;
+}
+
+.version-option:last-child {
+    border-bottom: none;
+}
+
+.version-option.active {
+    background: var(--md-primary-fg-color);
+    color: white;
+}
+

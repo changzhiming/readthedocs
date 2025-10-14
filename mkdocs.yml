@@ -4,9 +4,6 @@ site_description: 一个基于 MkDocs 和 Material 主题的文档网站
 site_author: changzhiming
 site_url: https://changzhiming.readthedocs.io/
 
-# 版本信息
-copyright: Copyright &copy; 2025 changzhiming
-
 # 仓库信息
 repo_name: changzhiming/readthedocs
 repo_url: https://github.com/changzhiming/readthedocs
@@ -17,10 +14,15 @@ theme:
   name: material
   language: zh
 
+  palette:
+    - scheme: default
+      primary: white
+      accent: white
+
   # 字体配置
   font:
-    text: Roboto
-    code: Roboto Mono
+    text: Consolas
+    code: Consolas
 
   # 图标
   icon:
@@ -50,9 +52,31 @@ theme:
     # 其他
     - header.autohide           # 自动隐藏标题
 
-# 添加自定义 CSS
+# 额外配置
+extra:
+  version:
+    provider: mike
+  social:
+    - icon: fontawesome/solid/book
+      link: https://changzhiming.readthedocs.io/
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
+  consent:
+    title: Cookie consent
+    description: >-
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+
+# 添加自定义 CSS 和 JavaScript
 extra_css:
   - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/version-selector.js
+  - javascripts/readthedocs-api.js
 
 # Markdown 扩展
 markdown_extensions:
@@ -65,7 +89,7 @@ markdown_extensions:
   - md_in_html                  # HTML 中的 Markdown
   - toc:                        # 目录
       permalink: true
-      toc_depth: 3
+      toc_depth: 2
   - tables                      # 表格
 
   # PyMdown Extensions
@@ -150,4 +174,7 @@ plugins:
       timezone: Asia/Shanghai
       locale: zh
       fallback_to_build_date: true
-
+  - git-authors:
+      show_contribution: true
+      show_line_count: true
+      count_empty_lines: false
