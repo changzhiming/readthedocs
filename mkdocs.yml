@@ -33,8 +33,6 @@ markdown_extensions:
 
 plugins:
   - search
-  - mkdocs_git_revision_date_localized:
-      fallback_to_build_date: true
 
 repo_url: https://github.com/yourname/mkdocs-rtd-template
 repo_name: GitHub
