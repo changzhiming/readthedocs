@@ -74,10 +74,6 @@ extra:
 extra_css:
   - stylesheets/extra.css
 
-extra_javascript:
-  - javascripts/version-selector.js
-  - javascripts/readthedocs-api.js
-
 # Markdown 扩展
 markdown_extensions:
   # Python Markdown 官方扩展
