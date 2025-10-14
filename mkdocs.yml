@@ -70,8 +70,8 @@ extra:
       make our documentation better.
 
 # 添加自定义 CSS 和 JavaScript
-extra_css:
-  - stylesheets/extra.css
+# extra_css:
+#   - stylesheets/extra.css
 
 # Markdown 扩展
 markdown_extensions:
@@ -84,7 +84,7 @@ markdown_extensions:
   - md_in_html                  # HTML 中的 Markdown
   - toc:                        # 目录
       permalink: true
-      toc_depth: 2
+      toc_depth: 1
   - tables                      # 表格
 
   # PyMdown Extensions
