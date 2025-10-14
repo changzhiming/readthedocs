@@ -1,0 +1,59 @@
+/* 高级全宽优化 */
+
+/* 确保页面容器充满视窗 */
+html, body {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* 头部导航充满宽度 */
+.md-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  z-index: 4;
+}
+
+/* 内容区域从头部下方开始 */
+.md-main {
+  padding-top: 2.4rem; /* 为固定头部留出空间 */
+}
+
+/* 页脚也要充满宽度 */
+.md-footer {
+  width: 100%;
+  margin: 0;
+}
+
+/* 搜索框优化 */
+.md-search {
+  width: 100%;
+}
+
+/* 移动端优化 */
+@media screen and (max-width: 44.9375em) {
+  .md-grid {
+    padding: 0;
+  }
+
+  .md-content {
+    padding: 0.5rem;
+  }
+
+  .md-nav--primary {
+    background-color: var(--md-default-bg-color);
+  }
+}
+
+/* 超宽屏优化 */
+@media screen and (min-width: 125em) {
+  .md-sidebar--primary {
+    width: 18rem;
+  }
+
+  .md-sidebar--secondary {
+    width: 15rem;
+  }
+}

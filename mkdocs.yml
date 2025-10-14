@@ -146,14 +146,6 @@ plugins:
       locale: zh
       fallback_to_build_date: true
 
-  # Git 作者信息
-  - git-authors:
-      show_contribution: true
-      show_line_count: true
-      count_empty_lines: false
-
-  # 社交卡片
-  - social:
-      cards_layout_options:
-        background_color: "#1e293b"
-        color: "#ffffff"
+# 添加自定义 CSS
+extra_css:
+  - stylesheets/extra.css
