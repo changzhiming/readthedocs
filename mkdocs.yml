@@ -32,7 +32,7 @@ theme:
   features:
     # 导航
     - navigation.sections       # 导航部分
-    - navigation.expand         # 展开导航
+    # - navigation.expand         # 展开导航
     - navigation.indexes        # 导航索引
     - navigation.top            # 返回顶部按钮
     - navigation.tracking       # 导航跟踪
@@ -109,13 +109,11 @@ markdown_extensions:
 # 导航结构
 nav:
   - c++:
-    collapse: true
-    children:
-      - 安装: getting-started/installation.md
-      - 配置: getting-started/configuration.md
-      - 第一个项目: getting-started/first-project.md
-      - 代码: guide.md
-      - 容器: c++/containers.md
+    - 安装: getting-started/installation.md
+    - 配置: getting-started/configuration.md
+    - 第一个项目: getting-started/first-project.md
+    - 代码: guide.md
+    - 容器: c++/containers.md
   - linux:
     - apt: linux/apt-dpkg.md
 
