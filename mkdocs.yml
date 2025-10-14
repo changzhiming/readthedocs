@@ -13,10 +13,28 @@ theme:
   name: material
   language: zh
 
+  # 调色板配置
   palette:
-    - scheme: default
-      primary: white
-      accent: white
+    # 浅色模式
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 切换到深色模式
+    # 深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 切换到浅色模式
+  # palette:
+  #   - scheme: default
+  #     primary: white
+  #     accent: white
 
   # # 字体配置
   # font:
