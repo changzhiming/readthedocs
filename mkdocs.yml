@@ -107,6 +107,7 @@ nav:
     - 安装: getting-started/installation.md
     - 配置: getting-started/configuration.md
     - 第一个项目: getting-started/first-project.md
+    - 代码: guide.md
   - 用户指南:
     - 基础教程:
       - 概述: guides/basic/overview.md
