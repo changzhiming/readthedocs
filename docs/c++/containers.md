@@ -99,3 +99,4 @@ int sum = std::accumulate(v.begin(), v.end(), 0);
 - std::vector 是动态数组，自动扩容
 - 核心功能：访问元素、修改元素、容量管理、迭代器遍历
 - 高级用法：emplace、移动语义、算法配合
+-
