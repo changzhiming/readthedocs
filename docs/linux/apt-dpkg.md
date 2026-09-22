@@ -18,7 +18,6 @@
 | `sudo apt dist-upgrade` | 发行版升级 | `sudo apt dist-upgrade` |
 
 
-333
 ## 3. 软件包管理
 
 | 命令 | 功能 | 示例 |
