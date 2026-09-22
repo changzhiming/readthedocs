@@ -17,6 +17,8 @@
 | `sudo apt full-upgrade` | 完整升级（可能删除旧依赖） | `sudo apt full-upgrade` |
 | `sudo apt dist-upgrade` | 发行版升级 | `sudo apt dist-upgrade` |
 
+
+
 ## 3. 软件包管理
 
 | 命令 | 功能 | 示例 |
